@@ -1,0 +1,13 @@
+a=int(input())
+c=[]
+k=list(map(int, input().split()))
+for i in range(a):
+    value=0
+    for j in range(i,a):
+        if k[i]>k[j]:
+           value=k[j]
+           break
+        else:
+            value=-1
+    c.append(value)
+print(*c)
