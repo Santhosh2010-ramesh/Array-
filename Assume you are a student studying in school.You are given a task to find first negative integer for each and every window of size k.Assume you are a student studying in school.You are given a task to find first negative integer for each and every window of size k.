@@ -1,0 +1,19 @@
+n=int(input())
+a=list(map(int, input().split()))
+k=int(input())
+n=0
+out=[]
+while k<=len(a):
+    ar=a[n:k]
+    n=n+1
+    k=k+1
+    val=[]
+    for i in ar:
+        if i<0:
+            val.append(i)
+            break
+    if len(val)>0:
+        out.append(val[0])
+    else:
+        out.append(0)
+print(' '.join(list(map(str,out))))
