@@ -1,0 +1,16 @@
+a=int(input())
+arr=list(map(int,input().split()))
+odd=[]
+even=[]
+arr1=[]
+for i in range(a):
+    if i%2==0 or i==0:
+        even.append(arr[i])
+    elif i!=0 & i==0:
+        odd.append(arr[i])
+even.sort()
+for i in range(len(even)):
+    arr1.append(even[i])
+    if i<len(odd):
+        arr1.append(odd[i])
+print(*arr1)
