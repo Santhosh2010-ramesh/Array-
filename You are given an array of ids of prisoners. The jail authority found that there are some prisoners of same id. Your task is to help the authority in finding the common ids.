@@ -1,0 +1,9 @@
+n=int(input())
+j=list(map(int, input().split()))
+arr=[]
+for i in j:
+    if j.count(i)>=2:
+        if i not in arr:
+            arr.append(i)
+if len(arr)>=1:
+    print(*arr)
