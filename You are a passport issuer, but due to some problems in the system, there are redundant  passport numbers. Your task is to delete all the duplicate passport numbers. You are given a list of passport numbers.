@@ -1,0 +1,6 @@
+k=int(input())
+j=list(map(str,input().split()))
+j = list(dict.fromkeys(j))
+l=' '.join(j)
+print(l)
+    
